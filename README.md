@@ -46,7 +46,7 @@ yahoo finance for the period \'1990-01-01\' to \'2025-03-28.
 
 **Figure2:**
 
-![](./image2.jpg){width="5.114584426946632in" height="2.59375in"}
+[alt text](./image1.jpg)
 
 Figure1 represents the daily return for S&P500.Figure2 is a
 regime-switching plot from a Markov-Switching Model applied to financial
@@ -54,11 +54,10 @@ returns for S&P 500.The Green line represents probability of being in
 the low-volatility regime which means market will be stable. The Red
 line depicts probability of being in the high volatility regime which
 means crises or turbulence times in the market.
-
 For trading desk this help to give indication to buy in low-volatility
 regimes, hedge in high-volatility regimes.
 
-**Diagnosis**
+### 4. Diagnosis:
 
 -   We need to check if the model residuals behave like white noise (no
     autocorrelation, homoscedasticity).
@@ -71,7 +70,7 @@ regimes, hedge in high-volatility regimes.
 
 -   Validate regime persistence and transitions.
 
-**Damage:**
+### 5. Damage:
 
 -   Incase Model mislabels noise as regimes, it will lead to a false
     \"high volatility\" regime signal and in turn could prompt premature
@@ -83,7 +82,7 @@ regimes, hedge in high-volatility regimes.
 -   Overfitting (too many regimes) or under-fitting (too few) can lead
     to Spurious regimes demand or missed regime shifts.
 
-**Directions:**
+### 6. Directions:
 
 -   Test the model with unseen data.
 
@@ -92,7 +91,7 @@ regimes, hedge in high-volatility regimes.
 -   Avoid skipping the diagnostic as it turns MSM into a \"black box\"
     that risks capital, credibility, and compliance.
 
-**Deployment:**
+### 7. Deployment:
 
 Post all the checks and validation, this model can be used to provides
 an edge in regime-aware investing, hedging, and forecasting.
