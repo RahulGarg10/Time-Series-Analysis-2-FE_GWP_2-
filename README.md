@@ -205,7 +205,8 @@ reliable and interpretable predictions, making it ready for use in daily
 market analysis or automated pipelines.
 
 ## (C) Modeling non-stationarity and finding an equilibrium:
-Definition:**
+
+### 1. Definition:
 
 A non-stationarity time series is a series which does not have constant
 mean and variance. A non-stationary time series has long term trends,
@@ -215,7 +216,7 @@ term they move together even if in the short term they may deviate from
 each other. This is called mean reversion property or finding an
 equilibrium.
 
-**Description:**
+### 2. Description:
 
 The two non-stationary time series are said to be co-integrated if there
 is a linear combination of two which makes the relationship stationary.
@@ -225,14 +226,12 @@ Second, using co-integration and building ECM or VECM models. Both ECM
 and VECM have an error correction term that will measure the deviation
 from mean and adjust the future values to reach equilibrium.
 
-**Demonstration and Diagram:**
+### 3. Demonstration and Diagram:
 
-![](./image6.jpg){width="6.5in" height="4.322916666666667in"}
+![alt text](images/image6.jpg)
 
 For demonstration, we used real world data of five stocks, Vanguard
-Information Technology Index Fund ETF (VGT),
-
-Crude Oil May 25 (CL=F), Goldman Sachs Physical Gold ETF (AAAU), Walmart
+Information Technology Index Fund ETF (VGT), Crude Oil May 25 (CL=F), Goldman Sachs Physical Gold ETF (AAAU), Walmart
 Inc. (WMT) and NIFTY 50 (\^NSEI) from 1st Jan 2020 to 7th April 2025.
 The above figure shows the time plot of the stock price of five stocks.
 From the graph, the stock prices show an upward trend with some high
@@ -251,7 +250,7 @@ coefficient estimates are significant and lambda, Λ is VGT.L1 = -1.1918.
 Then from the Durbin-Watson test, we found no autocorrelation among
 residuals. See accompanied python file for detailed analysis.
 
-**Diagnosis:**
+### 4. Diagnosis:
 
 -   In the VAR model, check for stationarity of time series using ADF
     and KPSS test.
@@ -266,7 +265,7 @@ residuals. See accompanied python file for detailed analysis.
 -   Evaluate model parameters like AIC, BIC, lambda, coefficient of
     variables, goodness of fit etc.
 
-**Damage:**
+### 5. Damage:
 
 -   Since the underlying statistics like mean and variance are not
     constant over time, you cannot fit a regression line, and the
@@ -282,7 +281,7 @@ residuals. See accompanied python file for detailed analysis.
     which requires stationary time series or ECM and VECM models which
     can tackle non stationary time series directly.
 
-**Directions:**
+### 6. Directions:
 
 -   Try different transformation techniques like log transformation,
     squared or box-cox transformation which can make the series
@@ -304,14 +303,14 @@ residuals. See accompanied python file for detailed analysis.
 -   We can use RNN and Deep learning techniques to model non stationary
     time series.
 
-**Deployment:**
+### 7. Deployment:
 
 Both VAR and ECM models can be used to forecast future stock prices and
 ECM models particularly can measure the deviation in one stock relative
 to deviation in other stock. It is useful in pairs trading and finding
 equilibrium in the long run.
 
-**References:**
+## **References:**
 
 1.  Greene, William H. *Econometric Analysis*. 8th ed., Pearson
     Education, 2018.
