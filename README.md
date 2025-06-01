@@ -115,7 +115,7 @@ denotes the correlation between two random variables. This near-linear
 dependence between features makes the model\'s coefficient estimation
 highly sensitive to small changes in the data.
 
-**Description:**
+### 2. Description:
 
 Multicollinearity increases the variance of the estimated coefficients,
 meaning the values they can take become more spread out and unstable
@@ -124,7 +124,7 @@ it difficult to determine the true effect of individual predictors. This
 can lead to misleading interpretations, such as incorrect signs or
 magnitudes of the coefficients.
 
-**Demonstration and Diagram**
+### 3. Demonstration and Diagram:
 
 A compelling way to demonstrate the effects of **multicollinearity** is
 by modeling **S&P 500 returns** using **sector ETF returns** as
@@ -150,23 +150,21 @@ multicollinearity can mislead interpretation, cause instability in
 estimation, and negatively affect out-of-sample predictive performance,
 even when in-sample metrics (like R²) seem acceptable.
 
-**Diagnosis:**
+### 4. Diagnosis:
 
 To determine whether there really is a problem and where to look for it,
 first of all we will build a correlation matrix. This matrix shows
 whether there is a linear relationship between two variables.
 
-![](./image3.jpg){width="3.6666666666666665in"
-height="2.7604166666666665in"}
+![alt text](images/image3.jpg)
 
 To detect the issue, we compute the VIF (Variance Inflation Factor),
 which measures how much the variance of a regression coefficient is
 inflated due to multicollinearity with other predictors (Kutner et al.).
 
-> ![](./image4.jpg){width="2.0833333333333335in"
-> height="1.1770833333333333in"}
+![alt text](images/image4.jpg)
 
-**Damage:**
+### 5. Damage:
 
 -   Unstable coefficient estimates -- Small changes in the data can lead
     to large swings in coefficients.
@@ -183,7 +181,7 @@ inflated due to multicollinearity with other predictors (Kutner et al.).
 -   Overfitting risk -- Model may perform well in-sample but poorly
     out-of-sample.
 
-**Directions:**
+### 6. Directions:
 
 To solve this problem, we can remove highly correlated features and
 retain only one of them, or we can create a new combined feature that
@@ -196,9 +194,9 @@ now below 1, and the standard errors are much smaller. This indicates
 that the model is more stable and better suited for reliable
 predictions. Also let's estimate VIF factors:
 
-> ![](./image5.jpg){width="2.1145833333333335in" height="0.875in"}
+![alt text](images/image5.jpg)
 
-**Deployment:**
+### 7. Deployment:
 
 The cleaned and stable model can be used to predict returns. It's
 suitable for Portfolio allocation, Risk monitoring or trading signal
