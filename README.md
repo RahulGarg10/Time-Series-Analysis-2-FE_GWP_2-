@@ -22,20 +22,20 @@ The observed time series follows an autoregressive (AR) process, but its
 parameters depend on the hidden state $𝑆_𝑡$:
 
  
-$$ 𝑦_𝑡 = µ_{𝑆_𝑡} + ϕ_{1,𝑆_𝑡}.𝑦_{𝑡-1}  + ϕ_{2,𝑆_𝑡}.𝑦_{𝑡-2} + ⋯ + ϕ_{p,𝑆_𝑡}.𝑦_{𝑡-p} + σ𝑆𝑡ϵ𝑡 $$
+$$ 𝑦_𝑡 = µ_{𝑆_𝑡} + ϕ_{1,𝑆_𝑡}.𝑦_{𝑡-1}  + ϕ_{2,𝑆_𝑡}.𝑦_{𝑡-2} + ⋯ + ϕ_{p,𝑆_𝑡}.𝑦_{𝑡-p} + σ_{𝑆_𝑡}.ϵ_𝑡 $$
 
-where:
+**where:**
 
--St ∈ {1, 2, ..., K} is the latent state at time t.
+- $S_t$ ∈ {1, 2, ..., K}: latent state at time t.
 
--μ𝑆𝑡: State-dependent mean.
+- $μ_{𝑆_𝑡}$: State-dependent mean.
 
--ϕ1, 𝑆𝑡, ... , ϕ𝑝, 𝑆𝑡ϕ1, 𝑆𝑡, ..., ϕ𝑝, 𝑆𝑡: State-dependent AR
-coefficients.
+- $ϕ_{i,𝑆_𝑡}$: State-dependent AR
+coefficients for lag i.
 
--σ𝑆𝑡: State-dependent volatility.
+- $σ_{𝑆_𝑡}$: State-dependent volatility.
 
--ϵ𝑡∼(0, 1): 𝑆𝑡𝑎𝑛𝑑𝑎𝑟𝑑 𝑛𝑜𝑟𝑚𝑎𝑙 𝑛𝑜𝑖𝑠e
+- $ϵ_𝑡$∼N(0, 1): Standard normal noise.
 
 ### 3. Demonstration and Diagram:
 
