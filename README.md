@@ -1,6 +1,6 @@
 # Time-Series-Analysis-2
 
-## Undergoing a Regime Change:
+## (A) Undergoing a Regime Change:
 ### 1. Definition:
 
 Regime-switching models are a class of statistical models that allow
@@ -42,11 +42,11 @@ For Demonstration purpose we have used S&P 500 data extracted using
 yahoo finance for the period \'1990-01-01\' to \'2025-03-28.
 **Figure1:**
 
-[alt text](./image1.jpg)
+![alt text](images/image1.jpg)
 
 **Figure2:**
 
-[alt text](./image1.jpg)
+![alt text](images/image2.jpg)
 
 Figure1 represents the daily return for S&P500.Figure2 is a
 regime-switching plot from a Markov-Switching Model applied to financial
@@ -96,7 +96,9 @@ regimes, hedge in high-volatility regimes.
 Post all the checks and validation, this model can be used to provides
 an edge in regime-aware investing, hedging, and forecasting.
 
-**[Handling multicollinearity]{.underline} Definition:**
+## (B) Handling multicollinearity:
+
+### 1. Definition:
 
 Multicollinearity occurs when two or more predictor variables in a
 regression model are highly correlated, meaning they contain overlapping
@@ -204,7 +206,7 @@ generation. With multicollinearity removed, the model provides more
 reliable and interpretable predictions, making it ready for use in daily
 market analysis or automated pipelines.
 
-**[Modeling non-stationarity and finding an equilibrium.]{.underline}
+## (C) Modeling non-stationarity and finding an equilibrium:
 Definition:**
 
 A non-stationarity time series is a series which does not have constant
