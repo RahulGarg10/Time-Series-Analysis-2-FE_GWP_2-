@@ -19,7 +19,7 @@ structural breaks, business cycles, and volatility regimes.
 **(A) Observable Equation (AR Process)**
 
 The observed time series follows an autoregressive (AR) process, but its
-parameters depend on the hidden state 𝑆𝑡:
+parameters depend on the hidden state $𝑆_𝑡$:
 
 𝑦𝑡^:^ = µ𝑆𝑡 + ϕ1, 𝑆𝑡𝑦𝑡 − 1 + ϕ2, 𝑆𝑡𝑦𝑡 − 2 + ⋯ + ϕ𝑝, 𝑆𝑡𝑦𝑡 − 𝑝 + σ𝑆𝑡ϵ𝑡
 
@@ -108,9 +108,9 @@ coefficient estimates and reducing the model's interpretability and
 predictive power. In mathematical terms, consider a linear regression
 model:
 
-𝑦 = ω1𝑥1 + ω2 𝑥2 + ....... + ω𝑛𝑥𝑛 + 𝑏,
+$𝑦 = ω_1𝑥_1 + ω_2𝑥_2 + ....... + ω_𝑛𝑥_𝑛 + 𝑏$,
 
-Multicollinearity arises when ∃ 𝑖 ≠ 𝑗: 𝐶𝑜𝑟(𝑥𝑖 , 𝑥𝑗 ) ≈ ± 1 , where Corr
+Multicollinearity arises when ∃ 𝑖 ≠ 𝑗: 𝐶𝑜𝑟($𝑥_𝑖 , 𝑥_𝑗 $) ≈ ± 1 , where Corr
 denotes the correlation between two random variables. This near-linear
 dependence between features makes the model\'s coefficient estimation
 highly sensitive to small changes in the data.
