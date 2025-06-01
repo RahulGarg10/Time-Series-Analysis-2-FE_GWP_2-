@@ -1,16 +1,16 @@
 # Time-Series-Analysis-2
 
-
-**[Undergoing a Regime Change]{.underline} Definition:**
+## Undergoing a Regime Change:
+### 1. Definition:
 
 Regime-switching models are a class of statistical models that allow
 parameters to change over time based on unobserved (latent) states or
 regimes. These models are widely used in economics, finance,
 environmental science, and other fields to capture structural changes,
-cyclical behavior, or sudden shifts in data-generating processes.
+cyclical behavior, or sudden shifts in data-generating processes. Markov-Switching Autoregressive (MSAR) is very popular model to analyze
+regime switch in financial markets. 
 
-Markov-Switching Autoregressive (MSAR) is very popular model to analyze
-regime switch in financial markets. **Description:**
+### 2. Description:
 
 For this report we will use MSAR model to understand regime switch for
 S&P500. This model is widely used in finance and economics to capture
@@ -36,14 +36,13 @@ coefficients.
 
 -ϵ𝑡∼(0, 1): 𝑆𝑡𝑎𝑛𝑑𝑎𝑟𝑑 𝑛𝑜𝑟𝑚𝑎𝑙 𝑛𝑜𝑖𝑠e
 
-**Demonstration and Diagram:**
+### 3. Demonstration and Diagram:
 
 For Demonstration purpose we have used S&P 500 data extracted using
 yahoo finance for the period \'1990-01-01\' to \'2025-03-28.
 **Figure1:**
 
-![](./image1.jpg){width="4.510416666666667in"
-height="2.7604166666666665in"}
+[alt text](./image1.jpg)
 
 **Figure2:**
 
