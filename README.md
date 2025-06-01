@@ -21,8 +21,8 @@ structural breaks, business cycles, and volatility regimes.
 The observed time series follows an autoregressive (AR) process, but its
 parameters depend on the hidden state $𝑆_𝑡$:
 
-$&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$ 
-𝑦𝑡^:^ = µ𝑆𝑡 + ϕ1, 𝑆𝑡𝑦𝑡 − 1 + ϕ2, 𝑆𝑡𝑦𝑡 − 2 + ⋯ + ϕ𝑝, 𝑆𝑡𝑦𝑡 − 𝑝 + σ𝑆𝑡ϵ𝑡
+ 
+$$ 𝑦𝑡^1 = µ𝑆𝑡 + ϕ1,𝑆𝑡𝑦𝑡 − 1 + ϕ2,𝑆𝑡𝑦𝑡 − 2 + ⋯ + ϕ𝑝,𝑆𝑡𝑦𝑡 − 𝑝 + σ𝑆𝑡ϵ𝑡 $$
 
 where:
 
@@ -109,8 +109,7 @@ coefficient estimates and reducing the model's interpretability and
 predictive power. In mathematical terms, consider a linear regression
 model:
 
-$&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$ 
-$𝑦 = ω_1𝑥_1 + ω_2𝑥_2 + ....... + ω_𝑛𝑥_𝑛 + 𝑏$,
+$$𝑦 = ω_1𝑥_1 + ω_2𝑥_2 + ....... + ω_𝑛𝑥_𝑛 + 𝑏$$
 
 Multicollinearity arises when ∃ 𝑖 ≠ 𝑗: 𝐶𝑜𝑟($𝑥_𝑖 , 𝑥_𝑗 $) ≈ ± 1 , where Corr
 denotes the correlation between two random variables. This near-linear
